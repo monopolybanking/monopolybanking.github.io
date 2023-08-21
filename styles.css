@@ -10,3 +10,9 @@
 .prova h1{
     font-size: 40px;
 }
+
+button{
+    width:90%;
+    height:80px;
+    border:0;
+}
