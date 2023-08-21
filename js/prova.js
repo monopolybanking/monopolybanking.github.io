@@ -1,5 +1,6 @@
 
 async function readNFC(){
+    consoleLog("--- reading... ---");
     if ("NDEFReader" in window){
         const ndef = new NDEFReader();
         try {
@@ -18,9 +19,11 @@ async function readNFC(){
     } else {
         consoleLog("Web NFC tag not supported.");
     }
+    consoleLog("+++ stopped reading +++");
 }
 
 async function writeNFC(){
+    consoleLog("--- writing... ---");
     if ("NDEFReader" in window){
         const ndef = new NDEFReader();
         try {
@@ -40,6 +43,7 @@ async function writeNFC(){
     } else {
         consoleLog("Web NFC tag not supported.");
     }
+    consoleLog("+++ stopped writing +++");
 }
 
 function consoleLog(data) {
