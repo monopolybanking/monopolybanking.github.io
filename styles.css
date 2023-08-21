@@ -1,0 +1,12 @@
+.prova{
+    background-color: lightgray;
+    color: black;
+
+    text-align: center;
+
+    border: 1px solid black;
+    margin: auto;
+}
+.prova h1{
+    font-size: 40px;
+}
